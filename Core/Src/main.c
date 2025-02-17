@@ -105,25 +105,43 @@ int main(void)
 
 	  WS2812B_clearBuffer();
 
-	  	  switch(i) {
+	  switch(i) {
 
-	  	  	  case 0:
-	  	  		  WS2812B_setPixel( 0, 0, 255, 0, 0 );
-	  	  		  WS2812B_setPixel( 0, 1, 0, 255, 0 );
+	      case 0:
+	          WS2812B_setPixel(0, 0, 255, 0, 0);   // Красный
+	          WS2812B_setPixel(0, 1, 0, 255, 0);   // Зеленый
+	          WS2812B_setPixel(0, 2, 0, 0, 255);   // Синий
+	          WS2812B_setPixel(0, 3, 255, 0, 0);   // Красный
+	          WS2812B_setPixel(0, 4, 255, 255, 0); // Желтый
+	          WS2812B_setPixel(0, 5, 0, 255, 255); // Бирюзовый
+	          WS2812B_setPixel(0, 6, 255, 0, 255); // Фиолетовый
+	          WS2812B_setPixel(0, 7, 255, 255, 255); // Белый
+	          break;
 
-	  		  break;
-	  	  	  case 1:
-	  	  		  WS2812B_setPixel( 0, 0, 0, 255, 0 );
-	  	  		  WS2812B_setPixel( 0, 1, 0, 0, 255 );
+	      case 1:
+	          WS2812B_setPixel(0, 0, 255, 165, 0); // Оранжевый
+	          WS2812B_setPixel(0, 1, 255, 192, 203); // Розовый
+	          WS2812B_setPixel(0, 2, 0, 128, 0); // Темно-зеленый
+	          WS2812B_setPixel(0, 3, 75, 0, 130); // Индиго
+	          WS2812B_setPixel(0, 4, 255, 255, 255); // Белый
+	          WS2812B_setPixel(0, 5, 128, 128, 128); // Серый
+	          WS2812B_setPixel(0, 6, 255, 0, 255); // Фиолетовый
+	          WS2812B_setPixel(0, 7, 0, 255, 255); // Циан
+	          break;
 
-	  		  break;
-	  	  	  case 2:
-	  	  		  WS2812B_setPixel( 0, 0, 0, 0, 255 );
-	  	  		  WS2812B_setPixel( 0, 1, 255, 0, 0 );
+	      case 2:
+	          WS2812B_setPixel(0, 0, 0, 0, 255);     // Синий
+	          WS2812B_setPixel(0, 1, 0, 255, 0);     // Зеленый
+	          WS2812B_setPixel(0, 2, 255, 255, 0);   // Желтый
+	          WS2812B_setPixel(0, 3, 255, 0, 0);     // Красный
+	          WS2812B_setPixel(0, 4, 163, 73, 164);  // Сиреневый
+	          WS2812B_setPixel(0, 5, 255, 140, 0);   // Темно-оранжевый
+	          WS2812B_setPixel(0, 6, 255, 20, 147);  // Фуксия
+	          WS2812B_setPixel(0, 7, 240, 128, 128); // Светло-коралловый
+	          break;
 
-	  		  break;
+	  }
 
-	  	  }
 
 	  WS2812B_sendBuffer();
 
